@@ -1,0 +1,329 @@
+/*Start Variables*/
+:root {
+    --main-color: #FFFF;
+    --bottom-color: #1A936F;
+    --main-padding-top: 70px;
+    --main-transition: 0.3s;
+    --main-padding-bottom: 100px;
+}
+
+/*End Variables*/
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1440px;
+    height: 699px;
+    font-family: "Poppins", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*Medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Global Rules*/
+/*Start screen*/
+
+.screen .close {
+    margin: 50px 0 0 170px;
+    border-radius: 50px;
+    background: #E7E7E7;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.screen .close i {
+    padding: 20px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.screen .close:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.screen .container {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+}
+
+.it {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.screen .container img {
+    width: 200px;
+    height: 184.7px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container .text {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #202020;
+    text-align: left;
+}
+
+.container form .cont {
+    margin: 25px 0;
+    border: none;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container form .cont label {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+}
+
+.container form .cont .input {
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.container form .cont .input input {
+    margin: 15px 0 15px 0;
+    width: 100%;
+    margin-left: 10px;
+    height: 30px;
+    position: relative;
+    border: none;
+}
+
+.container form .cont .input i {
+
+    margin: 15px 0 8px 0;
+    margin-left: 15px;
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+
+.container form .controw {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .rowbottom {
+    margin: 25px 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .savebottom {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .savebottom label {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background: white;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.container .savebottom label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2.5px;
+    bottom: 2px;
+    left: 3px;
+    background: linear-gradient(180deg, #FFFFFF, #777);
+    border-radius: 180px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.container .savebottom input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.container .savebottom input:checked+label {
+    background: #1A936F;
+}
+
+.container .savebottom input:checked+label:after {
+    left: 30px;
+    transform: translateX(-10%);
+    background: linear-gradient(180deg, #FFFFFF, #777);
+
+}
+
+.container .savebottom label,
+label:after {
+    transition: 0.3s;
+}
+
+.container .rowbottom .text {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+}
+
+.frame-parent {
+    margin: 70px 0;
+    border-radius: 10px;
+    padding: 25px;
+    background: #E9F8E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 20px;
+}
+
+.business-yearly-parent {
+    padding: 25px 20px;
+    font-weight: 400;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.total {
+    position: relative;
+    line-height: 122.3%;
+    font-weight: bold;
+}
+
+.container .Search form input {
+    border: none;
+    margin: 70px 0;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    box-shadow: 4px 4px 13px rgba(255, 255, 255, 0.25) inset, 2px 0px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: #1a936f;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+    margin: 10px 0 50px 0;
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*End screen*/

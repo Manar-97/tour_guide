@@ -1,0 +1,577 @@
+/*Start Variables*/
+:root {
+    --main-color: #FFFF;
+    --bottom-color: #1A936F;
+    --main-padding-top: 70px;
+    --main-transition: 0.3s;
+    --main-padding-bottom: 100px;
+}
+
+/*End Variables*/
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*Medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Global Rules*/
+/*Start Header*/
+header {
+    width: 100%;
+    background: #FFF;
+    display: inline-flex;
+    padding: 16px 119px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 48px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header .nav {
+    flex: 1;
+    position: relative;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 48px;
+}
+
+header .nav li a {
+    padding: 20px 10px;
+    display: block;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    color: black;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bottom-color);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+}
+
+header .nav li a:hover {
+    color: var(--bottom-color);
+}
+
+header .nav li a:hover::before {
+    color: var(--bottom-color);
+    border-bottom: 1px solid var(--bottom-color);
+    transform: scaleX(1);
+}
+
+header .nav li a.bottom {
+    background-color: var(--bottom-color);
+    color: var(--main-color);
+    display: flex;
+    padding: 17.5px 27px 13.5px 29px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+header .nav li a.bottom:hover {
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*End Header*/
+/*Start landing*/
+.landing {
+    background-color: #1f2021;
+    width: 100%;
+    height: 699px;
+    flex-shrink: 0;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), url("../images/experience.jpeg") lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+/*end landing*/
+/*Start component*/
+.component {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-around;
+
+}
+
+.component .container {
+    display: flex;
+    flex-direction: row;
+    width: 916px;
+    height: 300px;
+    border-radius: 13px;
+    border: 4px solid #F6F6F6;
+    background: #FFF;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.component .container .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.component .container img {
+    width: 243px;
+    height: 183px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 3px solid #FFF;
+}
+
+.component .container .image h5 {
+    top: -17px;
+    width: 50%;
+    position: relative;
+    border-radius: 39.12px;
+    background-color: #f5a41e;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3.9px 15.6px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.component .container .details {
+    position: relative;
+    align-items: flex-start;
+    width: 570px;
+}
+
+.component .container .details .price {
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: end;
+    color: #595959;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.component .container .details .price span {
+    color: #1A936F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.component .container .details h3 {
+    color: #1A936F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.component .container .details h5 {
+    color: #000;
+    width: 496px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.component .container .details .text ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    color: #555;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.component .container .details .text ul li {
+    display: inline;
+    color: #555;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.component .container .details .text ul li span {
+    font-size: 35px;
+    color: #000;
+}
+
+.component .container .details .detrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 15px 10px;
+}
+
+.component .container .details .detrow form input {
+    display: flex;
+    border: none;
+    height: 50px;
+    padding: 11px 40px 12px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #1A936F;
+    color: white;
+
+    cursor: pointer;
+}
+
+.component .container .details .detrow .box h3 {
+    color: #FFF;
+    padding: 11px 21px 11px 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.component .container .details .detrow .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.component .container .details .detrow .info i {
+    padding: 0 40px 0 40px;
+    width: 30px;
+    height: 13px;
+    justify-content: space-between;
+    color: #1A936F;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 13px;
+}
+
+.component .count ul {
+    display: flex;
+    flex-direction: row;
+    color: #ACACAC;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+}
+
+.component .count ul li {
+    padding: 10px 5px;
+}
+
+.component .count ul li:hover {
+    color: #1A936F;
+    cursor: pointer;
+}
+
+.component .findpassion {
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 303px;
+    height: 1300px;
+    background-image: url("../images/passion.png");
+}
+
+.component .findpassion .text {
+    color: #303030;
+    font-family: "Playfair Display";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.component .findpassion .texts form input {
+    margin: 10px;
+    display: flex;
+    width: 260.5px;
+    height: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    color: #808285;
+}
+
+
+.component .findpassion .texts .checboxs {
+    color: #808285;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.component .findpassion .texts .checboxs input {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #DDD;
+    background: #FFF;
+}
+
+.component .findpassion .texts .Search {
+    display: inline-flex;
+    padding: 16.05px 78.06px 15.95px 76.94px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A936F;
+    cursor: pointer;
+}
+
+.component .findpassion .texts .Search input {
+    background-color: #1A936F;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.component .findpassion .texts img {
+    border-radius: 10px;
+    margin: 20px 0 10px 0;
+    width: 260px;
+    height: 260px;
+}
+
+form .handle1 {
+    position: absolute;
+    top: -6px;
+    left: -4px;
+    border-radius: 7px;
+    background-color: #8b8b8b;
+    width: 14px;
+    height: 14px;
+}
+
+form .handle2 {
+    position: absolute;
+    top: -6px;
+    right: -13px;
+    border-radius: 7px;
+    background-color: #8b8b8b;
+    width: 14px;
+    height: 14px;
+}
+
+form .divnoui-origin {
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+    background-color: #8b8b8b;
+    height: 3px;
+}
+
+
+.component .findpassion .texts hr {
+    width: 80%;
+    position: relative;
+    display: flex;
+    border: 0.5px solid #969696;
+    margin: 25px 10px;
+    left: 25px;
+}
+
+/*end component*/
+/* Start Footer */
+.footer {
+    background-color: #F5F5F5;
+    padding: 70px 0 0;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer .box h3 {
+    color: black;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+
+.footer .box img {
+    height: 120px;
+    width: 120px;
+}
+
+.footer .box .links li {
+    padding: 15px 0;
+    transition: var(--main-transition);
+}
+
+.footer .box .links li:hover {
+    padding-left: 10px;
+}
+
+.footer .box .links li:hover a {
+    color: gray;
+}
+
+.footer .box .links li a {
+    color: black;
+    transition: var(--main-transition);
+}
+
+.footer .box .links li .first {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    transition: var(--main-transition);
+}
+
+.footer .box .line {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .footer .box .line {
+        flex-direction: column;
+    }
+}
+
+.footer .box .line i {
+    font-size: 25px;
+    color: black;
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .footer .box .line i {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.footer .box .line .info {
+    line-height: 1.7;
+    flex: 1;
+}
+
+.footer .box .line .info span {
+    display: block;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: black;
+    margin: 50px 0 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.697);
+}
+
+/* End Footer */

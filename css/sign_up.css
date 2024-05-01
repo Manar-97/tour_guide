@@ -1,0 +1,256 @@
+.img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 912px;
+    height: 1024px;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: -0.3px;
+    left: calc(50% - 53.53px);
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 107.4px;
+    height: 33.6px;
+}
+
+.fullname span {
+    position: absolute;
+    top: 57.6px;
+    left: 12px;
+    line-height: 24px;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    width: 79.2px;
+    height: 24px;
+}
+
+.fullname input {
+    position: absolute;
+    width: calc(100% - 24px);
+    top: 89.6px;
+    right: 12px;
+    left: 12px;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    border-radius: 6px;
+    background-color: #232a31;
+    border: 1px solid #232a31;
+    box-sizing: border-box;
+    height: 51.9px;
+    color: #777b7f;
+}
+
+.emailaddress span {
+    position: absolute;
+    top: 157.5px;
+    left: 12px;
+    line-height: 24px;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    width: 113px;
+    height: 24px;
+}
+
+.emailaddress input {
+    position: absolute;
+    width: calc(100% - 24px);
+    top: 189.5px;
+    right: 12px;
+    left: 12px;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    border-radius: 6px;
+    background-color: #232a31;
+    border: 1px solid #232a31;
+    box-sizing: border-box;
+    height: 51.9px;
+    color: #777b7f;
+}
+
+.pass span {
+    position: absolute;
+    top: 257.41px;
+    left: 12px;
+    line-height: 24px;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    width: 77.3px;
+    height: 24px;
+}
+
+.pass input {
+    position: absolute;
+    width: calc(100% - 24px);
+    top: 289.41px;
+    right: 12px;
+    left: 12px;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    border-radius: 6px;
+    background-color: #232a31;
+    border: 1px solid #232a31;
+    box-sizing: border-box;
+    height: 51.9px;
+    color: #777b7f;
+}
+
+.agree {
+    position: absolute;
+    width: calc(100% - 24px);
+    top: 364.82px;
+    right: 12px;
+    left: 12px;
+    height: 24.5px;
+    font-size: 14px;
+    color: #f8f9fa;
+}
+
+.agree a {
+    color: #0d6efd;
+}
+
+.submit input {
+    position: absolute;
+    height: calc(100% - 593.5px);
+    width: calc(100% - 24px);
+    top: 413.32px;
+    right: 12px;
+    bottom: 180.18px;
+    left: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background-color: #1a936f;
+    border: 1px solid #0d6efd;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.separator {
+    position: absolute;
+    top: calc(50% + 182.36px);
+    left: 12px;
+    border-top: 1px solid #6c757d;
+    box-sizing: border-box;
+    width: 134.5px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.or-with-social {
+    position: absolute;
+    top: 494.91px;
+    left: 154.54px;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    width: 141.2px;
+    height: 21px;
+}
+
+.separator1 {
+    position: absolute;
+    top: calc(50% + 182.36px);
+    left: 303.46px;
+    border-top: 1px solid #6c757d;
+    box-sizing: border-box;
+    width: 134.5px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.icons {
+    position: absolute;
+    top: 537.91px;
+    border-radius: 19px;
+    width: 38px;
+    height: 38px;
+    font-size: 35px;
+}
+
+.facebook {
+    position: absolute;
+    left: 130.99px;
+}
+
+.twitter {
+    position: absolute;
+    left: 180.99px;
+}
+
+.google {
+    position: absolute;
+    left: 230.99px;
+}
+
+.linkedin {
+    position: absolute;
+    left: 280.99px;
+}
+
+.already-have {
+    position: absolute;
+    top: 603.31px;
+    left: calc(50% - 116.98px);
+    font-size: 14px;
+    line-height: 25.2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 234.3px;
+    height: 25.2px;
+    cursor: pointer;
+    color: #f8f9fa;
+}
+
+.already-have a {
+    color: #0d6efd;
+    position: relative;
+    left: 5px;
+}
+
+.content {
+    position: absolute;
+    height: calc(100% - 378.9px);
+    top: 169.45px;
+    bottom: 209.45px;
+    left: calc(50% - 224.5px);
+    width: 450px;
+}
+
+.Rside {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 911px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 911px;
+    background-color: #000;
+}
+
+.sign-up {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment</title>
+        <!--Raender All Elements Normally-->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!--Font Awesome Library-->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--Main Template CSS File-->
+        <link rel="stylesheet" href="css/payment.css" />
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="screen">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i> </div>
+            <div class="container">
+                <div class="it">
+                    <img src="images/logo2.png" alt>
+                    <div class="text">Upgrade to “plan name”</div>
+                </div>
+                <form>
+                    <div class="cont">
+                        <label for="name">Card holder name</label>
+                        <div class="input">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name"
+                                placeholder="Enter the card holder name">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <label for="card">Card Number</label>
+                        <div class="input">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <input type="text" id="card"
+                                placeholder="XXXX  XXXX  XXXX  XXXX">
+                        </div>
+                    </div>
+                    <div class="controw">
+                        <div class="cont">
+                            <label for="expire">Expire Date</label>
+                            <div class="input">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <input type="text" id="expire"
+                                    placeholder="MM/YY">
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <label for="name">CVC</label>
+                            <div class="input">
+                                <input type="text" id="cvc"
+                                    placeholder="XXX">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="rowbottom">
+                    <div class="savebottom">
+                        <input type="checkbox" id="done">
+                        <label for="done"></label>
+                    </div>
+                    <div class="text">Save with yearly
+                    </div>
+                </div>
+                <div class="frame-parent">
+                    <div class="business-yearly-parent">
+                        <div class="business-yearly">Business yearly</div>
+                        <div class="business-yearly">EGP 55</div>
+                    </div>
+                    <div class="business-yearly-parent">
+                        <div class="business-yearly">Fees</div>
+                        <div class="business-yearly">EGP 55</div>
+                    </div>
+                    <div class="business-yearly-parent">
+                        <div class="total">Total</div>
+                        <div class="total">EGP 110</div>
+                    </div>
+                </div>
+                <div class="Search">
+                    <form action>
+                        <input type="submit" value="Pay now">
+                    </form>
+                </div>
+                <p>You may cancel at any time in your billing settings. By
+                    clicking on the button you agree to our Terms of Service and
+                    authorize this recurring charge.</p>
+            </div>
+        </div>
+    </body>
+</html>
